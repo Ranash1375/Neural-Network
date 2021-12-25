@@ -51,32 +51,32 @@ The implemented algorithm is tested using the [Wine recognition dataset](https:/
 The file x.csv includes the features of the dataset. Each row is an instance, and each column shows a feature.
 For example, the following numbers could be the first three instances of a x.csv file which has $13$ features. So, the number of numbers on each line shows the number of features, and the number of lines show the number of instances.
 
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 $1.51,-0.57,0.27,-1.24,2.29,0.82,1.05,-0.64,1.46,0.28,0.38,1.82,0.97$
 $0.20,0.51,-0.92,2.72,0.11,0.58,0.74,0.81,-0.50,-0.30,0.42,1.09,0.93$
 $0.15,0.03,1.26,-0.23,0.19,0.82,1.23,-0.48,2.47,0.29,0.33,0.77,1.35$
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 
 ### y.csv
 The file y.csv includes the outputs of the dataset. Each row shows the category of the instance. The following example shows the classes for the first three instances. The first two instances have category $1$, and the third one has category $2$. So, each line is related to one instance, and the file should have just one column.
 
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 $1$
 
 $1$
 
 $2$
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 ### layers.csv
 The file layers.csv contains the number of neurons for each hidden layer. The numbers should be written in the file in one column. So, the number on row $i$ shows the number of neurons in hidden layer $i$. The following example shows a network with two hidden layers, each with five neurons.
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 $5$
 
 $5$
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 ### parameters.csv
 This file contains five lines. The first line is the number of iterations ($N$) used for training the model. The second line is the number of iterations for cross-validation ($M$). The third line is the percentage of data for the train set ($T$). The fourth line is the learning rate ($\alpha$). Finally, the last line is the regularization ($\lambda$). The following shows an example of the parameters.csv file. The first three lines should be integers since the first two are the number of iterations for training and the number of iterations for CV. The third one should also be an integer number less than $100$ since it shows a percentage. The last two lines could be any real numbers.
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 $300$
 
 $10$
@@ -86,7 +86,7 @@ $80$
 $0.06$
 
 $0.01$
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 ## Outputs of the algorithm
 In this section, the algorithm results for two different setups of the network on the Wine recognition dataset will be presented. Remember that the algorithm parameters must be tuned to get better results.
 ### Test $1$
